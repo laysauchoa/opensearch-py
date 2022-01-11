@@ -27,7 +27,7 @@
 import ssl
 from typing import Any, Mapping, Optional, Union
 
-import urllib3  # type: ignore # noqa
+import urllib3  # type: ignore[attr-defined,unused-ignore]# noqa
 
 from .base import Connection
 

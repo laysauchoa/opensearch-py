@@ -30,7 +30,7 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple, Type, Union
 from .connection import Connection
 
 try:
-    from Queue import PriorityQueue  # type: ignore # noqa
+    from Queue import PriorityQueue  # type: ignore[attr-defined,unused-ignore]# noqa
 except ImportError:
     from queue import PriorityQueue
 

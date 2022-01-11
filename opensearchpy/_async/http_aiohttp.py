@@ -29,7 +29,7 @@ import os
 import ssl
 import warnings
 
-import urllib3  # type: ignore # noqa
+import urllib3  # type: ignore[attr-defined,unused-ignore]# noqa
 
 from ..compat import reraise_exceptions, urlencode
 from ..connection.base import Connection

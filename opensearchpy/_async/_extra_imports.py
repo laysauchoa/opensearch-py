@@ -24,7 +24,7 @@
 #  specific language governing permissions and limitations
 #  under the License.
 
-# type: ignore # noqa
+# type: ignore[attr-defined,unused-ignore]# noqa
 
 # This file exists for the sole reason of making mypy not
 # complain about type issues to do with 'aiohttp' and 'yarl'.

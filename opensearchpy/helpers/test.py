@@ -24,7 +24,7 @@
 #  specific language governing permissions and limitations
 #  under the License.
 
-# type: ignore # noqa
+# type: ignore[attr-defined,unused-ignore]# noqa
 
 import os
 import time
