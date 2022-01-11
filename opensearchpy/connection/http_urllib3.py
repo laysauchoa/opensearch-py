@@ -28,10 +28,10 @@ import ssl
 import time
 import warnings
 
-import urllib3  # type: ignore # noqa
+import urllib3  # type: ignore[attr-defined,unused-ignore]
 from urllib3.exceptions import ReadTimeoutError
-from urllib3.exceptions import SSLError as UrllibSSLError  # type: ignore # noqa
-from urllib3.util.retry import Retry  # type: ignore # noqa
+from urllib3.exceptions import SSLError as UrllibSSLError  # type: ignore[attr-defined,unused-ignore]
+from urllib3.util.retry import Retry  # type: ignore[attr-defined,unused-ignore]
 
 from ..compat import reraise_exceptions, urlencode
 from ..exceptions import (
