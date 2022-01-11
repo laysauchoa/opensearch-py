@@ -10,7 +10,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v1
       - name: Set up Python 3.7
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v2
         with:
           python-version: 3.7
       - name: Install dependencies
@@ -25,7 +25,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v1
       - name: Set up Python 3.7
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v2
         with:
           python-version: 3.7
       - name: Install build tools
@@ -52,7 +52,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v1
       - name: Set Up Python - ${{ matrix.python-version }}
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install Dependencies
@@ -67,7 +67,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v2
         with:
           python-version: '3.x'
       - name: Install dependencies
