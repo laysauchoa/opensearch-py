@@ -29,7 +29,7 @@ from .base import Connection
 try:
     import queue
 except ImportError:
-    import Queue as queue  # type: ignore
+    import Queue as queue  # type: ignore # noqa
 
 
 class PoolingConnection(Connection):

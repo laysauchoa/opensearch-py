@@ -36,5 +36,5 @@ class BulkIndexError(OpenSearchException):
 
 class ScanError(OpenSearchException):
     def __init__(self, scroll_id, *args, **kwargs):
-        super(ScanError, self).__init__(*args, **kwargs)  # type: ignore
+        super(ScanError, self).__init__(*args, **kwargs)  # type: ignore # noqa
         self.scroll_id = scroll_id

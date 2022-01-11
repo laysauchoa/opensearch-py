@@ -27,10 +27,10 @@
 from typing import Any, Collection, Mapping, Optional, Tuple, Union
 
 from ..connection import Connection
-from ._extra_imports import aiohttp  # type: ignore
+from ._extra_imports import aiohttp  # type: ignore # noqa
 
 class AsyncConnection(Connection):
-    async def perform_request(  # type: ignore
+    async def perform_request(  # type: ignore # noqa
         self,
         method: str,
         url: str,
