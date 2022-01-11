@@ -42,7 +42,7 @@ jobs:
         python-version: [2.7, 3.5, 3.6, 3.7, 3.8, 3.9, 3.10.0]
         experimental: [false]
         include:
-          - python-version: 3.11.0-alpha
+          - python-version: 3.11.0-alpha.3
             experimental: true
 
     runs-on: ubuntu-latest
